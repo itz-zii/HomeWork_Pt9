@@ -130,10 +130,10 @@ img {
 }
 
 .item span {
-    padding: 10px 37.5px;
+    padding: 5px 55.5px;
     position: relative;
     display: none;
-    top: 51%;
+    top: 54%;
 }
 
 .item:hover span {
