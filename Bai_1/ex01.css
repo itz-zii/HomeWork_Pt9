@@ -47,7 +47,6 @@ ul {
 #button li:hover {
     background-color: #e94e40;
     box-sizing: border-box;
-    border-radius: 4px;
     transition: .25s;
 }
 
