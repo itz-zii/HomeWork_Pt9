@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2e3e4d;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.header {
+    background-color: #1f4959;
+    height: 45px;
+    box-sizing: border-box;
+    /* border: 2px solid; */
+    border-radius: 4px;
+    border-color: #1f4959;
+    margin: 3% 12%;
+    position: relative;
+}
+
+#button > li > a {
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 24px;
+    display: inline-block;
+    margin: 2px;
+}
+
+#button > li {
+    display: inline-block;
+}
+
+#button > li > a {
+    color: white;
+    position: relative;
+}
+
+#button li:hover {
+    background-color: #e94e40;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: .25s;
+}
+
+#button li:hover .item {
+    display: block;
+}
+
+#button .item li {
+    border-radius: 0;
+}
+
+.item {
+    text-decoration: none;
+    position: absolute;
+    background-color: #24a1d1;
+    width: 15%;
+    display: none;
+}
+
+.item li {
+    padding: 10px 0;
+    border-bottom: 1px white solid;
+}
+
+.item li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+}
+
+.item li:hover .sub-item{
+    display: block;
+}
+
+.sub-item {
+    position: absolute;
+    background-color: #24a1d1;
+    width: 150px;
+    left: 100%;
+    bottom: 0%;
+    display: none;
+}
+
+/*  */
+
+.sub-item li:hover > .sub-nav-item {
+    display: block;
+}
+
+.sub-nav-item {
+    position: absolute;
+    background-color: #24a1d1;
+    width: 150px;
+    left: 100%;
+    display: none;
+    margin: -19% 0px;
+}
+
+/*  */
+
+.next-homework {
+    color: white;
+    margin: 0 25px;
+    position: relative;
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {bottom: -1000px;right:0px;}
+  to {bottom: -500px;right:0px;}
+}
+.next-homework a {
+    border: 2px white solid;
+    padding: 24px;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.next-homework a:hover {
+    color: black;
+    background-color: white;
+}

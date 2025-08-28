@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5% 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+}
+
+.sub-tags {
+    background-color: #dc4446;
+    width: 15px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+.tags p {
+    color: #dc4446;
+    font-weight: 900
+    ;
+}
+
+/*  */
+
+.flash-sales {
+    display: flex;
+    margin: 25px 15px;
+}
+
+.flash-sales .logo {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 10px 0;
+}
+
+.timer {
+    display: flex;
+    padding: 0 40px;
+}
+
+.timer > span {
+    font-size: 25px;
+    padding: 10px 0;
+    color: #dc4446;
+}
+
+.time {
+    padding: 0 25px;
+}
+
+.time p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.time span {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* */
+
+.button {
+    display: flex;
+    margin-left: 25%
+}
+
+.flash-sales .button p {
+    background-color: rgba(170, 170, 170, 0.299);
+    margin: 0 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.flash-sales .button p:hover {
+    background-color: #dc4446;
+    color: white;
+}
+
+/*  */
+
+img {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+}
+
+.item {
+    width: 100%;
+    margin: 0 25px;
+    box-shadow: 0 10px 10px rgb(177, 177, 177);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item .card {
+    background-color: rgba(232, 232, 232, 0.238);
+    padding: 30px 15px 30px 15px;
+    position: relative;
+}
+
+.item .sales {
+    background-color: #dc4446;
+    position: relative;
+    padding: 5px 10px;
+    margin: 0 5px;
+    position: absolute;
+    top: 10%;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.item span {
+    padding: 10px 37.5px;
+    position: relative;
+    display: none;
+    top: 51%;
+}
+
+.item:hover span {
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: block;
+}
+
+.item .card > p {
+    margin-top: 25px;
+}
+
+.cash {
+    margin: 10px 5px;
+}
+
+.cash b {
+    color: #dc4446;
+    margin-right: 5px;
+}
+
+.cash s {
+    color: grey;
+}
+
+.fa-star , .fa-star-half-stroke{
+    color: rgb(255, 187, 0);
+}
+
+.star {
+    display: flex;
+}
+
+.star > p {
+    color: rgb(185, 185, 185);
+    margin-left: 15px;
+}
+
+.card .icon {
+    position: absolute;
+    top: 9%;
+    right: 10%;
+}
+
+.sub-button {
+    margin: 10px 0;
+}
+
+.sub-button i:hover {
+    color: #dc4446;
+}
+
+.view-button {
+    background-color: #dc4446;
+    margin: 5% 35%;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.view-button:hover {
+    background-color: #bb393b;
+}
+
+/*  */
+
+.next-homework {
+    color: white;
+    margin: 0 25px;
+    position: relative;
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {right: 0;bottom:-200px;}
+  to {right: 0;bottom: 10px;}
+}
+.next-homework a {
+    border: 2px white solid;
+    padding: 24px;
+    border: 2px solid;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.next-homework a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
