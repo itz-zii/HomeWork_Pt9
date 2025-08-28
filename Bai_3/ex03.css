@@ -144,6 +144,7 @@ img {
     display: block;
     border-radius: 5px;
     transition: 0.25s ease;
+    
 }
 
 .item span:hover {
