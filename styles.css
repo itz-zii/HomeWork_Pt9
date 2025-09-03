@@ -1,3 +1,279 @@
-body {
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #4d486f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url(https://png.pngtree.com/png-vector/20221103/ourmid/pngtree-music-pattern-seamlessly-designed-for-uncomplicated-backgrounds-textures-and-packaging-vector-png-image_34507820.png);
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    font-size: 10px;
+    width: 100%;
+    font-family:fantasy;
+    background-color: #a23648;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px 1px 10px black;
+    background-image: url(https://img1.picmix.com/output/stamp/normal/9/9/1/1/2581199_4fcf4.gif);
+    user-select: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-box {
+    position: absolute;
+    background-color: #a23648;
+    width: 30%;
+    height: 67%;
+    padding: 25px;
+    top: 100px;
+    left: -500px;
+    border-radius: 50px;
+    transition: 0.5s ease;
+    box-shadow: 0px 10px 15px black;
+    animation: left-box 3.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    user-select: none;
+}
+
+@keyframes left-box {
+  from {left: -500px;}
+  to {left: 100px;}
+}
+
+.left-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 25px 25px black;
+}
+
+.left-box .sub-box {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    color: black;
+    border-radius: 50px;
+}
+
+.sub-box .header {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding: 25px;
+    border-bottom: 0.5px solid gray;
+    font-family: "Pacifico", cursive;
+}
+
+.sub-box .text img {
+    border-radius: 50px;
+}
+/*  */
+
+.middle-box-first {
+    position: relative;
+    background-color: #a23648;
+    width: 23%;
+    height: 17%;
+    padding: 25px;
+    top: -500px;
+    border-radius: 50px;
+    transition: 0.5s ease;
+    animation: middle-box 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5.5s;
+    cursor: pointer;
+}
+
+.middle-box-first .sub-box,
+.middle-box-second .sub-box,
+.middle-box-third .sub-box {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    color: black;
+    border-radius: 50px;
+    padding: 0 15%;
+    align-items: center;
+    font-family: "Lavishly Yours", cursive;
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.middle-box-second {
+    position: absolute;
+    background-color: #a23648;
+    width: 23%;
+    height: 17%;
+    padding: 25px;
+    top: -500px;
+    border-radius: 50px;
+    transition: 0.5s ease;
+    animation: middle-box-second 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 6.5s;
+    cursor: pointer;
+}
+
+.middle-box-third {
+    position: absolute;
+    background-color: #a23648;
+    width: 23%;
+    height: 17%;
+    padding: 25px;
+    top: -500px;
+    border-radius: 50px;
+    transition: 0.45s ease;
+    animation: middle-box-third 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 7.5s;
+    cursor: pointer;
+}
+
+.middle-box-first:hover,
+.middle-box-second:hover,
+.middle-box-third:hover {
+   transform: translateY(-10px);
+    box-shadow: 0px 25px 25px black;
+    background-color: #4d486f;
+}
+
+@keyframes middle-box {
+  from {top: -500px;}
+  to {top: 100px; box-shadow: 0px 10px 15px black;}
+}
+
+@keyframes middle-box-second {
+  from {top: -500px;}
+  to {top: 33%; box-shadow: 0px 10px 15px black;}
+}
+
+@keyframes middle-box-third {
+  from {top: -500px;}
+  to {top: 57%; box-shadow: 0px 10px 15px black;}
+}
+
+/*  */
+
+.right-box {
+    position: absolute;
+    background-color: #a23648;
+    width: 30%;
+    height: 60%;
+    padding: 25px;
+    border-radius: 50px;
+    transition: 0.5s ease;
+    box-shadow: 0px 10px 15px black;
+    right: -500px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    animation: right-box 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes right-box {
+  from {right: -500px;}
+  to {right: 100px;}
+}
+
+.right-box .sub-box {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    color: black;
+    border-radius: 50px;
+    padding: 0 15%;
+    align-items: center;
+}
+
+.right-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 25px 25px black;
+}
+
+.right-box img {
+    background-color: black;
+    margin-top: 15%;
+    height: 60%;
+    transition: 0.5s ease;
+    border-radius: 999px;
+    box-shadow: 0px 10px 10px black;
+}
+
+.right-box img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 25px 25px black;
+
+}
+
+.right-box .sub-box audio {
+    margin-top: 10px;
+    border-radius: 999px;
+    box-shadow: 0px 10px 10px black;
+}
+
+.right-box-below {
+    position: absolute;
+    background-color: #a23648;
+    width: 30%;
+    height: 10%;
+    padding: 20px;
+    border-radius: 50px;
+    transition: 0.5s ease;
+    box-shadow: 0px 10px 15px black;
+    bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+    right: -500px;
+    bottom: 100px;
+    animation: right-box 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    user-select: none;
+}
+
+.right-box-below .sub-box {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    padding: 0 15%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-box-below .sub-box p {
+    color: black;
+    font-size: 25px;
+    font-family: "Pacifico", cursive;
+}
+
+.right-box-below:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 25px 25px black;    
 }
